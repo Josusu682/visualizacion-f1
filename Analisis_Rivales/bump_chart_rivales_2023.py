@@ -60,7 +60,7 @@ def generar_bump_chart_real(año_objetivo, total_rondas):
 
     # 3. Configuración de la Figura
     fig, ax = plt.subplots(figsize=(14, 7))
-    fig.suptitle(f"Evolución Jerárquica de Rivales Directos - {año_objetivo} (Datos Oficiales)", fontsize=18, fontweight='bold')
+    fig.suptitle(f"Evolución Jerárquica de Rivales Directos - {año_objetivo}", fontsize=18, fontweight='bold')
 
     # 4. Trazar las líneas
     equipos = [col for col in df.columns if col != 'Ronda']

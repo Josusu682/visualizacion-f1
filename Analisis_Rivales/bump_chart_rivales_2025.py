@@ -55,7 +55,7 @@ def generar_bump_chart_2025_real():
     }
 
     fig, ax = plt.subplots(figsize=(14, 7))
-    fig.suptitle(f"Evolución Jerárquica - {año} (Datos Oficiales Reales)", fontsize=18, fontweight='bold')
+    fig.suptitle(f"Evolución Jerárquica - {año}", fontsize=18, fontweight='bold')
 
     equipos = [col for col in df.columns if col != 'Ronda']
     
