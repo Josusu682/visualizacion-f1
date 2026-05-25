@@ -59,7 +59,7 @@ def generar_boxplot_delta(año, gran_premio, piloto_referencia='VER'):
     fig.patch.set_facecolor('white')      # Fondo blanco limpio
     ax.set_facecolor('#f8f9fa')           # Gris muy claro para los datos
     fig.suptitle(f"Brecha de Rendimiento Puro (Race Pace Delta)\n{gran_premio} {año}", fontsize=16, fontweight='bold')
-    ax.set_title(f"Línea base (0.0s) = Ritmo mediano de {piloto_referencia} ({nombres_equipos[piloto_referencia]})", fontsize=11, color='lightgray')
+    ax.set_title(f"Línea base (0.0s) = Ritmo mediano de {piloto_referencia} ({nombres_equipos[piloto_referencia]})", fontsize=11, color='lightgray', pad=20)
 
     # Trazar el Boxplot
     sns.boxplot(
